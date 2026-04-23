@@ -1,0 +1,46 @@
+.sale {
+  padding: 80px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #dcdcdc;
+  margin-left: 30px;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.allBtn {
+  padding: 10px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  text-decoration: none;
+  color: grey;
+  background-color: #f5f5f5;
+  transition: all 0.3s ease;
+}
+
+.allBtn:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}

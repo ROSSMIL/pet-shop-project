@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  text-align: center;
+  gap: 20px;
+}
+
+.homeBtn {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  padding: 17px 60px;
+  background-color: #0d50ff;
+  color: white;
+  border: 2px solid #0d50ff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.homeBtn:hover {
+  background-color: black;
+  border-color: black;
+}
+
+.container img {
+  max-width: 100%;
+  width: 800px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.container p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: grey;
+  max-width: 600px;
+}

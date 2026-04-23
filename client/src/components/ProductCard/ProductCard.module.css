@@ -1,0 +1,115 @@
+.card {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discountBadge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #0d50ff;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.productInfo {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+}
+
+.oldPrice {
+  font-size: 18px;
+  font-weight: 500;
+  color: #a0a0a0;
+  text-decoration: line-through;
+  margin-bottom: 3px;
+}
+
+.addToCartBtn {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  padding: 12px;
+  background-color: #0d50ff;
+  color: white;
+  border: 2px solid #0d50ff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.card:hover .addToCartBtn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.addToCartBtn:not(:disabled):hover {
+  background-color: black;
+  border-color: black;
+}
+
+.addToCartBtn:disabled {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  cursor: default;
+  opacity: 1;
+  pointer-events: auto;
+}

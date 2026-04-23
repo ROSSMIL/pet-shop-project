@@ -1,0 +1,89 @@
+.sale {
+  background: linear-gradient(90deg, #2454ff 0%, #0029c2 100%);
+  padding: 60px 40px;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1440px;
+  color: #fff;
+  align-items: center;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 700;
+  margin: 0 0 50px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0px;
+}
+
+.petsImage {
+  position: relative;
+  max-height: 400px;
+  width: auto;
+  right: 20px;
+  top: 60px;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.form input,
+.submitBtn {
+  width: 125%;
+  padding: 18px 25px;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.form input {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  color: white;
+  font-weight: 500;
+  outline: none;
+}
+
+.submitBtn {
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  color: #000;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background-color: #333;
+  color: #fff;
+}
+
+.submitted {
+  background-color: #e9ecef !important;
+  color: #2454ff !important;
+  border: 1px solid #2454ff !important;
+  cursor: default !important;
+  font-weight: 600;
+}

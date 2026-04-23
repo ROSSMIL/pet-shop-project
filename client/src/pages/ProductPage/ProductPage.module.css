@@ -1,0 +1,107 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.productWrapper {
+  margin-top: 40px;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.imageBox {
+  flex: 1;
+}
+
+.imageBox img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.infoBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.priceSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 24px;
+}
+
+.currentPrice {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.oldPrice {
+  position: relative;
+  top: 8px;
+  color: #888;
+  text-decoration: line-through;
+  font-size: 40px;
+}
+
+.discountBadge {
+  position: relative;
+  bottom: 10px;
+  background-color: #0d50ff;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.addToCartBtn {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  padding: 15px 40px;
+  background-color: #0d50ff;
+  color: white;
+  border: 2px solid #0d50ff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addToCartBtn:not(:disabled):hover {
+  background-color: black;
+  border-color: black;
+}
+
+.addToCartBtn:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: white;
+  cursor: not-allowed;
+}
+
+.descriptionSection {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.descriptionSection h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.descriptionSection p {
+  line-height: 130%;
+  font-size: 16px;
+}
